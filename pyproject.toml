@@ -1,0 +1,36 @@
+[tool.poetry]
+package-mode = false
+description = "AI driven notifications"
+authors = ["Devis Lucato <root@dev.ai>"]
+
+
+[virtualenvs]
+in-project = true
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+langchain-openai = "^0.2.1"
+load-dotenv = "^0.1.0"
+langchain = "^0.3.1"
+beautifulsoup4 = "^4.12.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+ruff = "^0.6.8"
+
+
+[tool.black]
+line-length = 120
+exclude = "(.git|.mypy_cache|.venv)"
+
+
+[tool.ruff]
+line-length = 120
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

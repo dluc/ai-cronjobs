@@ -1,0 +1,30 @@
+# To learn more about .editorconfig see https://aka.ms/editorconfigdocs
+###############################
+# Core EditorConfig Options   #
+###############################
+root = true
+# All files
+[*]
+indent_style = space
+end_of_line = lf
+
+
+[*.py]
+tab_width = 2
+indent_size = 2
+insert_final_newline = false
+trim_trailing_whitespace = true
+
+
+[*.sh]
+tab_width = 2
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+
+[*.json]
+tab_width = 2
+indent_size = 2
+insert_final_newline = false
+trim_trailing_whitespace = true
