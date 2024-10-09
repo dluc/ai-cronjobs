@@ -1,6 +1,8 @@
+import os
 import subprocess
 
-bash_script = "macos/notify.sh"
+bash_script = "notify.sh"
+bash_script = os.path.join(os.path.dirname(os.path.realpath(__file__)), "notify.sh")
 
 
 def notify(parameter):
